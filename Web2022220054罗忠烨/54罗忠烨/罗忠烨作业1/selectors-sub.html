@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>层次样式选择器</title>
+    <style type="text/css">
+        #div2 ul li{
+            font-weight:normal;
+            color:hotpink;
+        }
+        #div1 ul li{
+            font-weight:bold;
+            color:deepskyblue;
+        }
+        li:hover{
+            background-color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <ul>
+            <li>这是#div1中的列表</li>
+            <li>这是#div1中的列表</li>
+            <li>这是#div1中的列表</li>
+        </ul>
+    </div>
+    <div id="div2">
+        <ul>
+            <li>这是#div2中的列表</li>
+            <li>这是#div2中的列表</li>
+            <li>这是#div2中的列表</li>
+        </ul>
+    </div>
+</body>
+</html>

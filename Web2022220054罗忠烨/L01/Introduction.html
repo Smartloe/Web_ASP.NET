@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>个人介绍</title>
+    <style type="text/css">
+        body {
+            /* 加载背景图 */
+            background-image: url(img/bg.jpg);
+            /* 背景图垂直、水平均居中 */
+            background-position: center center;
+            /* 背景图不平铺 */
+            background-repeat: no-repeat;
+            /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+            background-attachment: fixed;
+            /* 让背景图基于容器大小伸缩 */
+            background-size: cover;
+        }
+
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none
+        }
+
+        p {
+            color: whitesmoke
+        }
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        audio {
+            display: none;
+        }
+
+        button {
+            width: 100%;
+            height: 5px;
+            background: rgba(0,0,0,0);
+            border: 0px;
+            font-size: larger;
+        }
+
+        .css_table td:hover {
+            background-color: darkseagreen;
+            color: deeppink;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            //获取btn01
+            var btn01 = document.getElementById("btn01");
+            // 获取audio
+            var audio = document.getElementById('music1');
+            var isFlag = true;
+            btn01.onclick = function () {
+                if (isFlag) {
+                    document.getElementById("music_switch").src = "./img/music_on.png";
+                    audio.play();
+                    isFlag = false;
+                } else {
+                    document.getElementById("music_switch").src = "./img/music_off.png";
+                    audio.pause();
+                    isFlag = true;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="box1">
+        <button id="btn01"><marquee><img src="./img/music_off.png" id="music_switch" /></marquee></button>
+        <audio autoplay="autoplay" controls="controls" loop="loop" src="./bgm/bgm.mp3" id="music1"></audio>
+    </div>
+    <div id="box2">
+        <table style="width:70%; border-color:aliceblue" border="1" cellspacing="0" align="center" class="css_table table">
+            <caption><h3 align="center"><p>个人简历</p></h3></caption>
+            <tr>
+                <td width="100" height="40" bgcolor="hotpink" align="center">姓名</td>
+                <td width="150" height="40" align="center">
+                    <p>
+                        罗忠烨
+                    </p>
+                </td>
+                <td width="100" height="40" bgcolor="hotpink" align="center">性别</td>
+                <td width="150" height="40" align="center">
+                    <p>
+                        男
+                    </p>
+                </td>
+                <th width="150" height="40" rowspan="4">
+                    <a href="https://blog.csdn.net/qq_45473330" target="_blank" rel="noopener noreferrer">
+                        <img alt="照片" src="./img/logo.jpg" width="150px" />
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <td width="150" height="40" bgcolor="hotpink" align="center">年龄</td>
+                <td width="150" height="40" align="center">
+                    <p>
+                        23
+                    </p>
+                </td>
+                <td width="150" height="40" bgcolor="hotpink" align="center">籍贯</td>
+                <td width="150" height="40" align="center">
+                    <p>
+                        湖南芷江
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="150" height="40" bgcolor="hotpink" align="center">兴趣爱好</td>
+                <td width="150" height="40" align="center">
+                    <p>
+                        羽毛球、跑步
+                    </p>
+                </td>
+                <td width="150" height="40" bgcolor="hotpink" align="center">特长</td>
+                <td width="150" height="40" align="center">
+                    <p>
+                        无
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="150" height="40" bgcolor="hotpink" align="center">联系方式</td>
+                <td width="150" height="40" align="center">
+                    <p>
+                        17374501892
+                    </p>
+                </td>
+                <td width="150" height="40" bgcolor="hotpink" align="center">电子邮箱</td>
+                <td width="150" height="40" align="center">
+                    <p>
+                        <img alt="邮我" src="./img/邮箱.png" width="25px" />
+                        <a href="mailto:2022220054@stu.cqupt.cn?Subject=Hello%20again" target="_top">
+                            2022220054@stu.cqupt.cn
+                        </a>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="hotpink">人生格言</td>
+                <td colspan="4">
+                    <p>
+                        <marquee>
+                            我们不能因现实复杂而放弃梦想，不能因理想遥远而放弃追求。
+                        </marquee>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="hotpink" height="100px">
+                    教育经历
+                </td>
+                <td colspan="4">
+                    <ul class="aa">
+                        <li>
+                            <p>
+                                <span>
+                                    <img alt="学校" src="./img/学校.png" width="25px">
+                                    <a href="https://cqcet.edu.cn/" target="_blank" rel="noopener noreferrer">
+                                        <b>
+                                            重庆电子工程职业学院
+                                        </b>
+                                    </a>
+                                </span>
+                            </p>
+                            <ul class="bb">
+                                <li><p>专业：大数据技术与应用</p></li>
+                                <li><p>学历：专科</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>
+                                <span>
+                                    <img alt="学校" src="./img/学校.png" width="25px">
+                                    <a href="http://www.cqupt.edu.cn/" target="_blank" rel="noopener noreferrer">
+                                        <b>
+                                            重庆邮电大学
+                                        </b>
+                                    </a>
+                                </span>
+                            </p>
+                            <ul class="bb">
+                                <li><p>专业：电子商务</p></li>
+                                <li><p>学历：本科</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="hotpink" height="100px">自我评价</td>
+                <td colspan="4">
+                    <marquee>
+                        <p><b>人生三境界</b></p>
+                        <p>第一种境界是“昨夜西风凋碧树，独上高楼，往尽天涯路”。</p>
+                        <p>第二种境界是“衣带渐宽终不悔，为伊消得人憔悴”。</p>
+                        <p>第三种境界是“众里寻他千百度，蓦然回首，那人却在灯火阑珊处”。</p>
+                    </marquee>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

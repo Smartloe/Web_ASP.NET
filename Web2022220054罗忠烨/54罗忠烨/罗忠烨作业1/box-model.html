@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CSS box model</title>
+    <style type="text/css">
+        body{
+            margin:0px;
+            padding:0px;
+            text-align:left;
+        }
+        #content {
+            margin: 0px;
+            padding: 0px;
+            width:100px;
+            height:80px;
+            background-color:Highlight;
+        }
+        #father {
+            margin: 40px 40px 40px 40px;
+            padding:10px 20px 30px 40px;
+            border-width:20px;
+            border-style:solid;
+            width:200px;
+        }
+    <!--    #out{
+            margin:0;
+            padding:0px;
+            border:1px solid;
+        }-->
+    </style>
+
+</head>
+<body>
+    <div id="father">
+        <div id="content">
+            内容div，margin和border都为0，外框padding值为10px、20px、30px和40px。
+        </div>
+    </div>
+</body>
+</html>
