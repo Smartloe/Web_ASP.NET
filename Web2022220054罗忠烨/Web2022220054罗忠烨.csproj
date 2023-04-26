@@ -126,11 +126,18 @@
     <Content Include="L06\TextBox.aspx" />
     <Content Include="L06\下拉列表.aspx" />
     <Content Include="L06\下拉框的联动.aspx" />
+    <Content Include="L07\CompareValidator.aspx" />
     <Content Include="L07\HyperLink.aspx" />
     <Content Include="L07\Panel.aspx" />
     <Content Include="L07\RadioButtonList.aspx" />
+    <Content Include="L07\Required.aspx" />
     <Content Include="L07\Table.aspx" />
     <Content Include="L07\爱好CheckBoxList.aspx" />
+    <None Include="Scripts\jquery-3.6.4.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.4.js" />
+    <Content Include="Scripts\jquery-3.6.4.min.js" />
+    <Content Include="Scripts\jquery-3.6.4.slim.js" />
+    <Content Include="Scripts\jquery-3.6.4.slim.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +235,13 @@
     <Compile Include="L06\下拉框的联动.aspx.designer.cs">
       <DependentUpon>下拉框的联动.aspx</DependentUpon>
     </Compile>
+    <Compile Include="L07\CompareValidator.aspx.cs">
+      <DependentUpon>CompareValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="L07\CompareValidator.aspx.designer.cs">
+      <DependentUpon>CompareValidator.aspx</DependentUpon>
+    </Compile>
     <Compile Include="L07\HyperLink.aspx.cs">
       <DependentUpon>HyperLink.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -249,6 +263,13 @@
     <Compile Include="L07\RadioButtonList.aspx.designer.cs">
       <DependentUpon>RadioButtonList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="L07\Required.aspx.cs">
+      <DependentUpon>Required.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="L07\Required.aspx.designer.cs">
+      <DependentUpon>Required.aspx</DependentUpon>
+    </Compile>
     <Compile Include="L07\Table.aspx.cs">
       <DependentUpon>Table.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -267,6 +288,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.6.4.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
