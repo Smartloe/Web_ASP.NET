@@ -85,7 +85,15 @@
     <Content Include="54罗忠烨\罗忠烨作业1\span.html" />
     <Content Include="54罗忠烨\罗忠烨作业1\table.html" />
     <Content Include="54罗忠烨\罗忠烨作业1\units.html" />
-    <Content Include="54罗忠烨\罗忠烨作业2.aspx" />
+    <Content Include="54罗忠烨\罗忠烨作业2\罗忠烨作业2.aspx" />
+    <Content Include="54罗忠烨\罗忠烨作业3\img\bg.jpg" />
+    <Content Include="54罗忠烨\罗忠烨作业3\img\logo.jpg" />
+    <Content Include="54罗忠烨\罗忠烨作业3\img\music_off.png" />
+    <Content Include="54罗忠烨\罗忠烨作业3\img\music_on.png" />
+    <Content Include="54罗忠烨\罗忠烨作业3\img\学校.png" />
+    <Content Include="54罗忠烨\罗忠烨作业3\img\纸飞机.png" />
+    <Content Include="54罗忠烨\罗忠烨作业3\img\邮箱.png" />
+    <Content Include="54罗忠烨\罗忠烨作业3\Resume.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Introduction.html" />
     <Content Include="L01\bgm\bgm.mp3" />
@@ -141,12 +149,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="54罗忠烨\罗忠烨作业2.aspx.cs">
+    <Compile Include="54罗忠烨\罗忠烨作业2\罗忠烨作业2.aspx.cs">
       <DependentUpon>罗忠烨作业2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="54罗忠烨\罗忠烨作业2.aspx.designer.cs">
+    <Compile Include="54罗忠烨\罗忠烨作业2\罗忠烨作业2.aspx.designer.cs">
       <DependentUpon>罗忠烨作业2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="54罗忠烨\罗忠烨作业3\Resume.aspx.cs">
+      <DependentUpon>Resume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="54罗忠烨\罗忠烨作业3\Resume.aspx.designer.cs">
+      <DependentUpon>Resume.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
