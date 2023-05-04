@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32319.34
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33328.57
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web2022220054罗忠烨", "Web2022220054罗忠烨\Web2022220054罗忠烨.csproj", "{F221DEA0-7763-4E87-91B9-938634C7377C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web应用程序设计", "Web2022220054罗忠烨\Web应用程序设计.csproj", "{F221DEA0-7763-4E87-91B9-938634C7377C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpFeatures", "CSharpFeatures\CSharpFeatures.csproj", "{87B56059-2586-4E01-B8D8-A7F5333C91A3}"
 EndProject

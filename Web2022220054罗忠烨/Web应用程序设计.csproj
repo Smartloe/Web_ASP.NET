@@ -68,32 +68,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="54罗忠烨\罗忠烨作业1\a.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\box-model.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\div.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\first.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\form-select.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\form-text.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\from-button.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\head.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\hr.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\img.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\li.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\p.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\priority-level.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\selectors-sub.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\span.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\table.html" />
-    <Content Include="54罗忠烨\罗忠烨作业1\units.html" />
-    <Content Include="54罗忠烨\罗忠烨作业2\罗忠烨作业2.aspx" />
-    <Content Include="54罗忠烨\罗忠烨作业3\img\bg.jpg" />
-    <Content Include="54罗忠烨\罗忠烨作业3\img\logo.jpg" />
-    <Content Include="54罗忠烨\罗忠烨作业3\img\music_off.png" />
-    <Content Include="54罗忠烨\罗忠烨作业3\img\music_on.png" />
-    <Content Include="54罗忠烨\罗忠烨作业3\img\学校.png" />
-    <Content Include="54罗忠烨\罗忠烨作业3\img\纸飞机.png" />
-    <Content Include="54罗忠烨\罗忠烨作业3\img\邮箱.png" />
-    <Content Include="54罗忠烨\罗忠烨作业3\Resume.aspx" />
+    <Content Include="作业汇总\作业1\a.html" />
+    <Content Include="作业汇总\作业1\box-model.html" />
+    <Content Include="作业汇总\作业1\div.html" />
+    <Content Include="作业汇总\作业1\first.html" />
+    <Content Include="作业汇总\作业1\form-select.html" />
+    <Content Include="作业汇总\作业1\form-text.html" />
+    <Content Include="作业汇总\作业1\from-button.html" />
+    <Content Include="作业汇总\作业1\head.html" />
+    <Content Include="作业汇总\作业1\hr.html" />
+    <Content Include="作业汇总\作业1\img.html" />
+    <Content Include="作业汇总\作业1\li.html" />
+    <Content Include="作业汇总\作业1\p.html" />
+    <Content Include="作业汇总\作业1\priority-level.html" />
+    <Content Include="作业汇总\作业1\selectors-sub.html" />
+    <Content Include="作业汇总\作业1\span.html" />
+    <Content Include="作业汇总\作业1\table.html" />
+    <Content Include="作业汇总\作业1\units.html" />
+    <Content Include="作业汇总\作业2\罗忠烨作业2.aspx" />
+    <Content Include="作业汇总\作业3\img\bg.jpg" />
+    <Content Include="作业汇总\作业3\img\logo.jpg" />
+    <Content Include="作业汇总\作业3\img\music_off.png" />
+    <Content Include="作业汇总\作业3\img\music_on.png" />
+    <Content Include="作业汇总\作业3\img\学校.png" />
+    <Content Include="作业汇总\作业3\img\纸飞机.png" />
+    <Content Include="作业汇总\作业3\img\邮箱.png" />
+    <Content Include="作业汇总\作业3\Resume.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Introduction.html" />
     <Content Include="L01\bgm\bgm.mp3" />
@@ -149,18 +149,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="54罗忠烨\罗忠烨作业2\罗忠烨作业2.aspx.cs">
+    <Compile Include="作业汇总\作业2\罗忠烨作业2.aspx.cs">
       <DependentUpon>罗忠烨作业2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="54罗忠烨\罗忠烨作业2\罗忠烨作业2.aspx.designer.cs">
+    <Compile Include="作业汇总\作业2\罗忠烨作业2.aspx.designer.cs">
       <DependentUpon>罗忠烨作业2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="54罗忠烨\罗忠烨作业3\Resume.aspx.cs">
+    <Compile Include="作业汇总\作业3\Resume.aspx.cs">
       <DependentUpon>Resume.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="54罗忠烨\罗忠烨作业3\Resume.aspx.designer.cs">
+    <Compile Include="作业汇总\作业3\Resume.aspx.designer.cs">
       <DependentUpon>Resume.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
