@@ -69,6 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="L08\CustomValidator.aspx" />
+    <Content Include="L08\Redirect.aspx" />
+    <Content Include="L08\Student.aspx" />
+    <Content Include="L08\Teacher.aspx" />
     <Content Include="L08\Write.aspx" />
     <Content Include="L08\Request.aspx" />
     <Content Include="L08\验证学号.aspx" />
@@ -159,6 +162,27 @@
     </Compile>
     <Compile Include="L08\CustomValidator.aspx.designer.cs">
       <DependentUpon>CustomValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="L08\Redirect.aspx.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="L08\Redirect.aspx.designer.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="L08\Student.aspx.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="L08\Student.aspx.designer.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="L08\Teacher.aspx.cs">
+      <DependentUpon>Teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="L08\Teacher.aspx.designer.cs">
+      <DependentUpon>Teacher.aspx</DependentUpon>
     </Compile>
     <Compile Include="L08\Write.aspx.cs">
       <DependentUpon>Write.aspx</DependentUpon>
