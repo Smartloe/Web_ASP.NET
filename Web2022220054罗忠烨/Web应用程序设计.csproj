@@ -68,6 +68,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="L08\CustomValidator.aspx" />
+    <Content Include="L08\验证学号.aspx" />
     <Content Include="作业汇总\作业1\a.html" />
     <Content Include="作业汇总\作业1\box-model.html" />
     <Content Include="作业汇总\作业1\div.html" />
@@ -149,6 +151,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="L08\CustomValidator.aspx.cs">
+      <DependentUpon>CustomValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="L08\CustomValidator.aspx.designer.cs">
+      <DependentUpon>CustomValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="L08\验证学号.aspx.cs">
+      <DependentUpon>验证学号.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="L08\验证学号.aspx.designer.cs">
+      <DependentUpon>验证学号.aspx</DependentUpon>
+    </Compile>
     <Compile Include="作业汇总\作业2\罗忠烨作业2.aspx.cs">
       <DependentUpon>罗忠烨作业2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
