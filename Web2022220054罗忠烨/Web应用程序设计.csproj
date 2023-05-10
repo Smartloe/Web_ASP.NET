@@ -76,6 +76,8 @@
     <Content Include="L08\Request.aspx" />
     <Content Include="L08\验证学号.aspx" />
     <Content Include="L09\Server.aspx" />
+    <Content Include="L09\Session.aspx" />
+    <Content Include="L09\SessionLogin.aspx" />
     <Content Include="作业汇总\作业1\a.html" />
     <Content Include="作业汇总\作业1\box-model.html" />
     <Content Include="作业汇总\作业1\div.html" />
@@ -212,6 +214,20 @@
     </Compile>
     <Compile Include="L09\Server.aspx.designer.cs">
       <DependentUpon>Server.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="L09\Session.aspx.cs">
+      <DependentUpon>Session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="L09\Session.aspx.designer.cs">
+      <DependentUpon>Session.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="L09\SessionLogin.aspx.cs">
+      <DependentUpon>SessionLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="L09\SessionLogin.aspx.designer.cs">
+      <DependentUpon>SessionLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="作业汇总\作业2\罗忠烨作业2.aspx.cs">
       <DependentUpon>罗忠烨作业2.aspx</DependentUpon>
@@ -378,6 +394,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Database\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
