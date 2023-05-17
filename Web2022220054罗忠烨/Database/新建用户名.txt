@@ -1,0 +1,10 @@
+CREATE LOGIN [有庭树] WITH PASSWORD=N'123', DEFAULT_DATABASE=[master], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF
+GO
+USE [Web程序设计]
+GO
+CREATE USER [mrl] FOR LOGIN [mrl]
+GO
+USE [Web程序设计]
+GO
+EXEC sp_addrolemember N'db_owner', N'mrl'
+GO

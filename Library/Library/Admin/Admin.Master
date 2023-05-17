@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Library.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap-table.js"></script>
+    <link href="../css/bootstrap-table.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../js/bootstrap.min.js"></script>
+   <style>
+     .footer {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          /* Set the fixed height of the footer here */
+          height: 50px;
+          background-color: #f5f5f5;
+        }
+   </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="JavaScript:void(0)">
+          <b>图书馆管理系统</b>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="../Index/Index.aspx">主页</a>
+          </li>
+          <li>
+            <a href="../Book/Index.aspx">图书管理</a>
+          </li>
+          <li>
+            <a href="../User/Index.aspx">用户管理</a>
+          </li>
+          <li>
+            <a href="../Borrow/Index.aspx">借阅管理</a>
+          </li>
+            <li>
+            <a href="../List/Index.aspx">排行榜</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="JavaScript:void(0)" style="cursor:default"> <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></a>
+          </li>
+          <li>
+        <asp:Button ID="Button1" runat="server" Text="退出" CssClass="btn btn-default btn-lg  col-sm-16"  OnClick="Logout"/>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+          
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>
