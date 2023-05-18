@@ -79,6 +79,8 @@
     <Content Include="L09\Session.aspx" />
     <Content Include="L09\SessionLogin.aspx" />
     <Content Include="L10\ConnStr.aspx" />
+    <Content Include="L10\Parameters.aspx" />
+    <Content Include="L10\SqlDSInsert.aspx" />
     <Content Include="作业汇总\作业1\a.html" />
     <Content Include="作业汇总\作业1\box-model.html" />
     <Content Include="作业汇总\作业1\div.html" />
@@ -236,6 +238,20 @@
     </Compile>
     <Compile Include="L10\ConnStr.aspx.designer.cs">
       <DependentUpon>ConnStr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="L10\Parameters.aspx.cs">
+      <DependentUpon>Parameters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="L10\Parameters.aspx.designer.cs">
+      <DependentUpon>Parameters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="L10\SqlDSInsert.aspx.cs">
+      <DependentUpon>SqlDSInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="L10\SqlDSInsert.aspx.designer.cs">
+      <DependentUpon>SqlDSInsert.aspx</DependentUpon>
     </Compile>
     <Compile Include="作业汇总\作业2\罗忠烨作业2.aspx.cs">
       <DependentUpon>罗忠烨作业2.aspx</DependentUpon>
