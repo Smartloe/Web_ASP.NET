@@ -10,21 +10,29 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:SqlDataSource runat="server" ConnectionString="<%$ ConnectionStrings:tangbin %>" DeleteCommand="DELETE FROM [班级表] WHERE [班号] = @班号" InsertCommand="INSERT INTO [班级表] ([班号], [年级], [添加时间]) VALUES (@班号, @年级, @添加时间)" SelectCommand="SELECT * FROM [班级表]" UpdateCommand="UPDATE [班级表] SET [年级] = @年级, [添加时间] = @添加时间 WHERE [班号] = @班号">
-                <DeleteParameters>
-                    <asp:Parameter Name="班号" Type="String" />
-                </DeleteParameters>
+            <h3>插入新班级</h3>
+            班号：<asp:TextBox ID="班号" runat="server"></asp:TextBox>
+            <br />
+            年级：<asp:TextBox ID="年级" runat="server"></asp:TextBox>
+            <asp:Button ID="保存Button" runat="server" Text="保存Button" OnClick="保存Button_Click"  />
+            <asp:SqlDataSource ID="班级SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Web程序设计ConnectionString2 %>" InsertCommand="INSERT INTO 班级表(班号, 年级) VALUES (@班号, @年级)" SelectCommand="SELECT * FROM [班级表]">
                 <InsertParameters>
-                    <asp:Parameter Name="班号" Type="String" />
-                    <asp:Parameter Name="年级" Type="String" />
-                    <asp:Parameter Name="添加时间" Type="DateTime" />
+                    <asp:ControlParameter ControlID="班号" Name="班号" PropertyName="Text" />
+                    <asp:ControlParameter ControlID="年级" Name="年级" PropertyName="Text" />
                 </InsertParameters>
-                <UpdateParameters>
-                    <asp:Parameter Name="年级" Type="String" />
-                    <asp:Parameter Name="添加时间" Type="DateTime" />
-                    <asp:Parameter Name="班号" Type="String" />
-                </UpdateParameters>
+
             </asp:SqlDataSource>
+            
+            <asp:GridView ID="班级GridView" runat="server">
+                <Columns>
+                    <asp:BoundField DataField="班号" HeaderText="班号" ReadOnly="True" SortExpression="班号" />
+
+                    <asp:BoundField DataField="年级" HeaderText="年级" SortExpression="年级" />
+                    <asp:BoundField DataField="添加时间" HeaderText="添加时间" SortExpression="添加时间" />
+
+                </Columns>
+
+            </asp:GridView>
         </div>
     </form>
 </body>
