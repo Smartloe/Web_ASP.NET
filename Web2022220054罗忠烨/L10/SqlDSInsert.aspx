@@ -15,21 +15,14 @@
             <br />
             年级：<asp:TextBox ID="年级" runat="server"></asp:TextBox>
             <asp:Button ID="保存Button" runat="server" Text="保存Button" OnClick="保存Button_Click"  />
-            <asp:SqlDataSource ID="班级SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Web程序设计ConnectionString2 %>" InsertCommand="INSERT INTO 班级表(班号, 年级) VALUES (@班号, @年级)" SelectCommand="SELECT * FROM [班级表]">
-                <InsertParameters>
-                    <asp:ControlParameter ControlID="班号" Name="班号" PropertyName="Text" />
-                    <asp:ControlParameter ControlID="年级" Name="年级" PropertyName="Text" />
-                </InsertParameters>
+            <asp:SqlDataSource ID="班级SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Web程序设计ConnectionString2 %>" SelectCommand="SELECT [班号], [年级] FROM [班级表]">
 
             </asp:SqlDataSource>
             
-            <asp:GridView ID="班级GridView" runat="server">
+            <asp:GridView ID="班级GridView" runat="server" AutoGenerateColumns="False" DataKeyNames="班号" DataSourceID="班级SqlDataSource">
                 <Columns>
                     <asp:BoundField DataField="班号" HeaderText="班号" ReadOnly="True" SortExpression="班号" />
-
                     <asp:BoundField DataField="年级" HeaderText="年级" SortExpression="年级" />
-                    <asp:BoundField DataField="添加时间" HeaderText="添加时间" SortExpression="添加时间" />
-
                 </Columns>
 
             </asp:GridView>
